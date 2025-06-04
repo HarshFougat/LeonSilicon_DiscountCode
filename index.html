@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeonSilicon.io Course Details and Discount Codes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            scroll-behavior: smooth;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+        }
+        
+        .tech-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        
+        .neon-border {
+            box-shadow: 0 0 5px #4f46e5, 0 0 10px #4f46e5;
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px #4f46e5, 0 0 10px #4f46e5;
+        }
+        
+        .circuit-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%232563eb' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .mobile-nav {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            .mobile-nav {
+                display: block;
+            }
+        }
+        
+        /* Tooltip styles */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 140px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        /* Animations */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Chart styles */
+        .chart-container {
+            position: relative;
+            height: 200px;
+            width: 100%;
+        }
+        
+        /* Responsive table */
+        .responsive-table {
+            overflow-x: auto;
+        }
+        
+        /* Particle effect */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            background-color: rgba(79, 70, 229, 0.2);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 circuit-pattern">
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <div class="flex justify-between items-center p-4">
+            <div class="text-xl font-bold text-indigo-600">LeonSilicon.io</div>
+            <button id="mobile-menu-button" class="text-gray-500 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-3">
+                <a href="#overview" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Overview</a>
+                <a href="#course-content" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Course Content</a>
+                <a href="#target-audience" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Who Can Join</a>
+                <a href="#benefits" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Benefits</a>
+                <a href="#discount-codes" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Discount Codes</a>
+                <a href="#strategies" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Strategies</a>
+                <a href="#value-analysis" class="nav-link px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Value Analysis</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-40 overflow-y-auto">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-6">LeonSilicon.io</h2>
+            <nav class="space-y-1">
+                <a href="#overview" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Overview</a>
+                <a href="#course-content" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Course Content</a>
+                <a href="#target-audience" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Who Can Join</a>
+                <a href="#benefits" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Benefits</a>
+                <a href="#discount-codes" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Discount Codes</a>
+                <a href="#strategies" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Strategies</a>
+                <a href="#value-analysis" class="nav-link block px-4 py-2 rounded hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Value Analysis</a>
+            </nav>
+            
+            <div class="mt-10 p-4 bg-indigo-50 rounded-lg">
+                <h3 class="font-semibold text-indigo-700 mb-2">Current Price</h3>
+                <p class="text-3xl font-bold text-indigo-600">$29</p>
+                <p class="text-xs text-indigo-500 mt-1">*limited alpha pricing</p>
+                <button class="mt-4 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md transition-colors">
+                    Visit Website
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-0 md:ml-64 pt-16 md:pt-6 pb-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Hero Section -->
+            <section id="overview" class="py-10 md:py-16">
+                <div class="relative glass-card rounded-2xl p-8 mb-10 overflow-hidden">
+                    <div class="particles" id="particles-js"></div>
+                    <div class="relative z-10">
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">10x MacOS Course by Leon Silicon</h1>
+                        <p class="text-lg text-gray-600 mb-6">Learn how to type fast & use MacOS 10x faster ⚡</p>
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">MacOS</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">Automation</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Typing</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full">Workflows</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <div class="flex-1 bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="bg-indigo-100 p-3 rounded-full">
+                                        <i class="fas fa-tag text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold">Current Price</h3>
+                                        <p class="text-2xl font-bold text-indigo-600">$29</p>
+                                        <p class="text-xs text-gray-500">*limited alpha pricing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center gap-3">
+                                    <div class="bg-green-100 p-3 rounded-full">
+                                        <i class="fas fa-infinity text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold">Access</h3>
+                                        <p class="text-lg font-bold text-green-600">Lifetime</p>
+                                        <p class="text-xs text-gray-500">Including future updates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">About the Course Creator</h2>
+                    <div class="flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-32 h-32 bg-indigo-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-5xl text-indigo-500"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">Leon Silicon</h3>
+                            <p class="text-gray-600 mb-4">Known online as "the 10x developer" 🙃, Leon has spent hundreds of hours crafting custom macOS workflows, automations, and tools that enable him to use his computer 10x faster. His viral shorts showcase impressive techniques like summoning apps out of thin air, teleporting windows across screens, and navigating between websites and displays without lifting hands off the keyboard.</p>
+                            <div class="flex gap-3">
+                                <a href="#" class="text-indigo-600 hover:text-indigo-800" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-indigo-600 hover:text-indigo-800" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="text-indigo-600 hover:text-indigo-800" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Content Section -->
+            <section id="course-content" class="py-10">
+                <div class="glass-card rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-book-open text-indigo-600 mr-3"></i>
+                        What Will Happen in the Course
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-3">Comprehensive Learning Modules</h3>
+                            <p class="text-gray-600 mb-4">The course is structured into progressive learning modules that build upon each other, ensuring you develop a solid foundation before moving to advanced techniques.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Keyboard shortcut mastery for MacOS</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Advanced typing techniques and practice</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Window management and organization</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">App switching and multitasking workflows</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-3">Custom Automation Development</h3>
+                            <p class="text-gray-600 mb-4">Learn to create your own scripts and workflows to transform the way you use your Mac, with step-by-step guidance on building automations tailored to your needs.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Introduction to MacOS automation tools</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Creating custom keyboard shortcuts</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Building scripts for repetitive tasks</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Using AI to help code custom workflows</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-3">Practical Application & Projects</h3>
+                            <p class="text-gray-600 mb-4">Apply what you've learned through guided projects and real-world scenarios that help cement your skills and demonstrate immediate productivity improvements.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Building a custom productivity dashboard</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Creating app-specific automation workflows</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Implementing advanced window management</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Optimizing your personal workflow setup</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-3">Community & Ongoing Support</h3>
+                            <p class="text-gray-600 mb-4">Join a community of like-minded productivity enthusiasts where you can share ideas, get inspiration from others' workflows, and receive ongoing support.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Access to community forum or Discord</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Workflow sharing and collaboration</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Q&A opportunities with Leon</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm">Peer feedback on your custom setups</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Course Delivery Format</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                                <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                                    <i class="fas fa-video text-2xl text-blue-600"></i>
+                                </div>
+                                <h4 class="font-semibold mb-2">Video Lessons</h4>
+                                <p class="text-sm text-gray-600">Detailed video tutorials with clear explanations and demonstrations</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                                <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                                    <i class="fas fa-file-alt text-2xl text-purple-600"></i>
+                                </div>
+                                <h4 class="font-semibold mb-2">Resources & Guides</h4>
+                                <p class="text-sm text-gray-600">Downloadable resources, cheat sheets, and reference guides</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                                <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+                                    <i class="fas fa-code text-2xl text-green-600"></i>
+                                </div>
+                                <h4 class="font-semibold mb-2">Code & Scripts</h4>
+                                <p class="text-sm text-gray-600">Ready-to-use code snippets and customizable scripts</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Course Progression</h3>
+                        <div class="relative">
+                            <!-- Timeline -->
+                            <div class="absolute left-4 top-0 h-full w-0.5 bg-indigo-200"></div>
+                            
+                            <!-- Timeline items -->
+                            <div class="relative pl-12 pb-8">
+                                <div class="absolute left-0 top-1 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold">1</span>
+                                </div>
+                                <h4 class="text-lg font-semibold text-indigo-700">Foundations</h4>
+                                <p class="text-gray-600 mt-1">Learn essential MacOS shortcuts and typing techniques to build a solid foundation</p>
+                            </div>
+                            
+                            <div class="relative pl-12 pb-8">
+                                <div class="absolute left-0 top-1 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold">2</span>
+                                </div>
+                                <h4 class="text-lg font-semibold text-indigo-700">Productivity Tools</h4>
+                                <p class="text-gray-600 mt-1">Discover and configure essential productivity applications and tools</p>
+                            </div>
+                            
+                            <div class="relative pl-12 pb-8">
+                                <div class="absolute left-0 top-1 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold">3</span>
+                                </div>
+                                <h4 class="text-lg font-semibold text-indigo-700">Automation Basics</h4>
+                                <p class="text-gray-600 mt-1">Introduction to automation concepts and basic scripting for MacOS</p>
+                            </div>
+                            
+                            <div class="relative pl-12 pb-8">
+                                <div class="absolute left-0 top-1 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold">4</span>
+                                </div>
+                                <h4 class="text-lg font-semibold text-indigo-700">Advanced Workflows</h4>
+                                <p class="text-gray-600 mt-1">Create sophisticated workflows combining multiple tools and techniques</p>
+                            </div>
+                            
+                            <div class="relative pl-12">
+                                <div class="absolute left-0 top-1 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold">5</span>
+                                </div>
+                                <h4 class="text-lg font-semibold text-indigo-700">Mastery & Customization</h4>
+                                <p class="text-gray-600 mt-1">Develop your own custom productivity system tailored to your specific needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Target Audience Section -->
+            <section id="target-audience" class="py-10">
+                <div class="glass-card rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-users text-indigo-600 mr-3"></i>
+                        Who Can Join This Course
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-indigo-100 p-3 rounded-full">
+                                    <i class="fas fa-laptop-code text-xl text-indigo-600"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Software Developers</h3>
+                            </div>
+                            <p class="text-gray-600 mb-3">Developers who want to streamline their coding workflow, navigate between files faster, and automate repetitive development tasks.</p>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Faster code navigation and editing</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Automated build and test processes</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Efficient terminal and IDE workflows</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full">
+                                    <i class="fas fa-briefcase text-xl text-blue-600"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Business Professionals</h3>
+                            </div>
+                            <p class="text-gray-600 mb-3">Office workers and managers looking to process emails faster, manage documents efficiently, and streamline their daily administrative tasks.</p>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Email and calendar management</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Document organization and processing</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Meeting and presentation workflows</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-green-100 p-3 rounded-full">
+                                    <i class="fas fa-paint-brush text-xl text-green-600"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Designers & Creatives</h3>
+                            </div>
+                            <p class="text-gray-600 mb-3">Graphic designers, video editors, and other creative professionals who want to navigate between tools faster and automate parts of their creative process.</p>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Faster design tool navigation</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Asset management automation</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Efficient multi-app workflows</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-yellow-100 p-3 rounded-full">
+                                    <i class="fas fa-graduation-cap text-xl text-yellow-600"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Students & Researchers</h3>
+                            </div>
+                            <p class="text-gray-600 mb-3">Academic users who need to manage research materials, write papers efficiently, and organize their study resources more effectively.</p>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Research material organization</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Faster note-taking and writing</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm">Study schedule and resource management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 rounded-lg p-6 mb-8">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-4">Skill Level Requirements</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 border border-indigo-100">
+                                <h4 class="font-semibold text-indigo-700 mb-2">Beginners</h4>
+                                <p class="text-sm text-gray-600 mb-3">No prior experience with advanced MacOS features required. The course starts with fundamentals and builds progressively.</p>
+                                <div class="flex items-center gap-2 text-sm text-indigo-600">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Suitable for new Mac users</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-indigo-100">
+                                <h4 class="font-semibold text-indigo-700 mb-2">Intermediate</h4>
+                                <p class="text-sm text-gray-600 mb-3">Those familiar with basic Mac operations will progress faster and can quickly move to more advanced techniques.</p>
+                                <div class="flex items-center gap-2 text-sm text-indigo-600">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Will enhance existing skills</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 border border-indigo-100">
+                                <h4 class="font-semibold text-indigo-700 mb-2">Advanced</h4>
+                                <p class="text-sm text-gray-600 mb-3">Even experienced Mac power users will discover new techniques and automation possibilities they hadn't considered.</p>
+                                <div class="flex items-center gap-2 text-sm text-indigo-600">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Will refine expert workflows</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Technical Requirements</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-indigo-700 mb-3">Required:</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>MacOS computer (any recent version)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>Admin access to install software</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>Internet connection for downloading tools</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>Basic computer literacy</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-indigo-700 mb-3">Recommended:</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>MacOS Monterey or newer</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>External keyboard (for keyboard shortcuts)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>Multiple displays (for advanced window management)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-green-500 mt-1"></i>
+                                        <span>8GB+ RAM for smoother multitasking</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits Section -->
+            <section id="benefits" class="py-10">
+                <div class="glass-card rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-star text-indigo-600 mr-3"></i>
+                        Who Benefits from This Course
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-tachometer-alt text-2xl text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-center mb-3">Time-Conscious Professionals</h3>
+                            <p class="text-sm text-gray-600 text-center">People who value their time and want to eliminate inefficiencies in their daily computer usage will see immediate benefits.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">Time Savings</span>
+                                    <div class="w-2/3 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-brain text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-center mb-3">Focus-Oriented Workers</h3>
+                            <p class="text-sm text-gray-600 text-center">Those who need to maintain deep focus and minimize distractions will benefit from streamlined workflows that reduce context switching.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">Focus Improvement</span>
+                                    <div class="w-2/3 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 hover:border-indigo-300 transition-colors">
+                            <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-tasks text-2xl text-green-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-center mb-3">Multitaskers</h3>
+                            <p class="text-sm text-gray-600 text-center">People who regularly juggle multiple applications and tasks will gain powerful tools to switch contexts efficiently and manage complex workflows.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">Efficiency Gain</span>
+                                    <div class="w-2/3 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-600 h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 border border-gray-200 mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Specific Benefits by Role</h3>
+                        <div class="overflow-x-auto responsive-table">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Primary Benefits</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time Saved (Est.)</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ROI Potential</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                                                    <i class="fas fa-code text-indigo-600"></i>
+                                                </div>
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">Software Developer</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <ul class="text-sm text-gray-600 list-disc pl-5">
+                                                <li>Faster code navigation</li>
+                                                <li>Efficient terminal usage</li>
+                                                <li>Quick app switching</li>
+                                            </ul>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">5-10 hrs/week</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                            10-20x course cost
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                                    <i class="fas fa-chart-line text-blue-600"></i>
+                                                </div>
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">Business Analyst</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <ul class="text-sm text-gray-600 list-disc pl-5">
+                                                <li>Spreadsheet automation</li>
+                                                <li>Report generation</li>
+                                                <li>Data organization</li>
+                                            </ul>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">3-8 hrs/week</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                            8-15x course cost
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10 bg-purple-100 rounded-full flex items-center justify-center">
+                                                    <i class="fas fa-paint-brush text-purple-600"></i>
+                                                </div>
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">Designer</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <ul class="text-sm text-gray-600 list-disc pl-5">
+                                                <li>Design tool shortcuts</li>
+                                                <li>Asset management</li>
+                                                <li>Client presentation workflows</li>
+                                            </ul>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">4-7 hrs/week</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                            7-12x course cost
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                                                    <i class="fas fa-user-tie text-yellow-600"></i>
+                                                </div>
+                                                <div class="ml-4">
+                                                    <div class="text-sm font-medium text-gray-900">Executive</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <ul class="text-sm text-gray-600 list-disc pl-5">
+                                                <li>Email management</li>
+                                                <li>Meeting efficiency</li>
+                                                <li>Information organization</li>
+                                            </ul>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">2-5 hrs/week</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                                            15-30x course cost
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-4">Productivity Transformation</h3>
+                            <div class="chart-container">
+                                <canvas id="productivityChart"></canvas>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-4">Most users report significant productivity improvements within the first 2 weeks of implementing the course techniques.</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-lg font-semibold text-indigo-700 mb-4">Long-Term Benefits</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Reduced Digital Fatigue</h4>
+                                        <p class="text-sm text-gray-600">Less time hunting for files, switching between apps, and performing repetitive tasks means less mental fatigue.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Career Advancement</h4>
+                                        <p class="text-sm text-gray-600">Increased productivity can lead to better performance reviews, more completed projects, and career growth opportunities.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Work-Life Balance</h4>
+                                        <p class="text-sm text-gray-600">Completing tasks more efficiently creates more time for personal pursuits and reduces after-hours work.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="bg-green-100 p-1 rounded-full mt-1">
+                                        <i class="fas fa-check text-xs text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-800">Transferable Skills</h4>
+                                        <p class="text-sm text-gray-600">Many of the productivity principles can be applied to other operating systems and digital environments.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-4">Testimonial Highlights</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white p-5 rounded-lg border border-indigo-100 relative">
+                                <div class="absolute -top-3 -left-3 bg-indigo-500 text-white w-8 h-8 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="text-gray-600 italic mb-4">"I've tried many productivity courses before, but Leon's approach to MacOS automation has genuinely transformed how I work. I'm saving at least 10 hours a week."</p>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                                    <div>
+                                        <h4 class="font-medium">Sarah K.</h4>
+                                        <p class="text-xs text-gray-500">Software Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-5 rounded-lg border border-indigo-100 relative">
+                                <div class="absolute -top-3 -left-3 bg-indigo-500 text-white w-8 h-8 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="text-gray-600 italic mb-4">"As someone who isn't technically inclined, I was worried this would be too advanced. But the step-by-step approach made it easy to follow and implement."</p>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                                    <div>
+                                        <h4 class="font-medium">Michael T.</h4>
+                                        <p class="text-xs text-gray-500">Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Discount Codes Section -->
+            <section id="discount-codes" class="py-10">
+                <div class="glass-card rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-tags text-indigo-600 mr-3"></i>
+                        Available Discount Options
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-5 border border-gray-200 relative overflow-hidden hover:shadow-md transition-shadow">
+                                <div class="absolute top-0 right-0 bg-amber-500 text-white text-xs font-bold px-3 py-1">Limited Time</div>
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Alpha Pricing Discount</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            The current $29 price is already discounted as "limited alpha pricing"
+                                        </p>
+                                    </div>
+                                    <button class="copy-btn bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-sm py-1 px-3 rounded-md flex items-center gap-1 transition-colors" data-code="ALPHA">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Try Code</span>
+                                    </button>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <i class="fas fa-clock text-amber-500"></i>
+                                    <span class="text-xs text-amber-700">May expire soon as course exits alpha stage</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Email Signup Discount</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Many course creators offer 10-15% off when subscribing to their email list
+                                        </p>
+                                    </div>
+                                    <button class="copy-btn bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-sm py-1 px-3 rounded-md flex items-center gap-1 transition-colors" data-code="NEWSLETTER">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Try Code</span>
+                                    </button>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <i class="fas fa-envelope text-blue-500"></i>
+                                    <span class="text-xs">Check the website for newsletter signup options</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Social Media Follow Discount</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Try following Leon on social media platforms and check for pinned discount posts
+                                        </p>
+                                    </div>
+                                    <button class="copy-btn bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-sm py-1 px-3 rounded-md flex items-center gap-1 transition-colors" data-code="SOCIAL10">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Try Code</span>
+                                    </button>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <i class="fab fa-twitter text-blue-400"></i>
+                                    <span class="text-xs">Check Leon's social media profiles for exclusive codes</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Referral Discount</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Check if there's a referral program where existing students can share discount codes
+                                        </p>
+                                    </div>
+                                    <button class="copy-btn bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-sm py-1 px-3 rounded-md flex items-center gap-1 transition-colors" data-code="FRIEND">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Try Code</span>
+                                    </button>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <i class="fas fa-users text-green-500"></i>
+                                    <span class="text-xs">Ask friends who may have purchased the course</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-semibold text-lg">First-Time Purchase Discount</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Many course platforms offer a discount for first-time buyers
+                                        </p>
+                                    </div>
+                                    <button class="copy-btn bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-sm py-1 px-3 rounded-md flex items-center gap-1 transition-colors" data-code="FIRSTTIME">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Try Code</span>
+                                    </button>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <i class="fas fa-bolt text-yellow-500"></i>
+                                    <span class="text-xs">Try this code during your first checkout</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-5 border border-gray-200 hover:shadow-md transition-shadow">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Seasonal Discount</h3>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Look for special promotions during holidays or seasonal events
+                                        </p>
+                                    </div>
+                                    <button class="copy-btn bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-sm py-1 px-3 rounded-md flex items-center gap-1 transition-colors" data-code="SEASON25">
+                                        <i class="fas fa-copy"></i>
+                                        <span>Try Code</span>
+                                    </button>
+                                </div>
+                                <div class="mt-3 flex items-center gap-2">
+                                    <i class="fas fa-calendar-alt text-purple-500"></i>
+                                    <span class="text-xs">Check during major holidays or back-to-school periods</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-indigo-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-4">Where to Look for Codes</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded-lg border border-indigo-100 flex items-start gap-3">
+                                <div class="bg-indigo-100 p-2 rounded-full">
+                                    <i class="fas fa-globe text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Official Website</h4>
+                                    <p class="text-xs text-gray-600 mt-1">Check the leonsilicon.io homepage for banners or popups with special offers</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-indigo-100 flex items-start gap-3">
+                                <div class="bg-blue-100 p-2 rounded-full">
+                                    <i class="fab fa-twitter text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Twitter/X</h4>
+                                    <p class="text-xs text-gray-600 mt-1">Search for @leonsilicon or related hashtags for promotional tweets</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-indigo-100 flex items-start gap-3">
+                                <div class="bg-red-100 p-2 rounded-full">
+                                    <i class="fab fa-youtube text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">YouTube</h4>
+                                    <p class="text-xs text-gray-600 mt-1">Check video descriptions of Leon's content for special codes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Strategies Section -->
+            <section id="strategies" class="py-10">
+                <div class="glass-card rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-lightbulb text-indigo-600 mr-3"></i>
+                        Discount Code Strategies
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-lg font-semibold text-green-600 flex items-center gap-2 mb-4">
+                                <i class="fas fa-check-circle"></i>
+                                Recommended Approaches
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-green-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Join Leon's email list to receive notifications about special offers and discount codes</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-green-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Follow Leon on social media platforms where he might share limited-time discount codes</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-green-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Check if there's a community forum or Discord server where members share discount codes</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-green-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Consider purchasing during major sales events like Black Friday or Cyber Monday</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-green-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Reach out directly to Leon or support to ask about available discounts</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-lg font-semibold text-red-600 flex items-center gap-2 mb-4">
+                                <i class="fas fa-times-circle"></i>
+                                Approaches to Avoid
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Using unauthorized discount code websites that may provide expired or invalid codes</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Delaying purchase for too long if the current "alpha pricing" is already discounted</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Sharing or using discount codes that are explicitly meant for specific individuals</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Creating multiple accounts to try to get new-user discounts multiple times</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <i class="fas fa-arrow-right text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span class="text-sm">Paying for discount codes from third-party sellers, which may be fraudulent</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-white rounded-lg p-6 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Common Discount Code Patterns to Try</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">WELCOME10</p>
+                                    <p class="text-xs text-gray-500">New user discount</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="WELCOME10">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">MACOS10</p>
+                                    <p class="text-xs text-gray-500">Product-specific</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="MACOS10">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">LEON10</p>
+                                    <p class="text-xs text-gray-500">Creator name</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="LEON10">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">PRODUCTIVITY</p>
+                                    <p class="text-xs text-gray-500">Theme-based</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="PRODUCTIVITY">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">DEVELOPER</p>
+                                    <p class="text-xs text-gray-500">Profession-based</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="DEVELOPER">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">SUMMER2025</p>
+                                    <p class="text-xs text-gray-500">Seasonal</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="SUMMER2025">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">SAVE15</p>
+                                    <p class="text-xs text-gray-500">Generic savings</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="SAVE15">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="border rounded-lg p-3 flex justify-between items-center">
+                                <div>
+                                    <p class="font-mono font-medium">EARLYBIRD</p>
+                                    <p class="text-xs text-gray-500">Early adopter</p>
+                                </div>
+                                <button class="copy-btn text-gray-400 hover:text-indigo-600 transition-colors" data-code="EARLYBIRD">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Value Analysis Section -->
+            <section id="value-analysis" class="py-10">
+                <div class="glass-card rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-chart-line text-indigo-600 mr-3"></i>
+                        Value Analysis
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 text-center">
+                            <h3 class="text-lg font-semibold text-green-600">$29</h3>
+                            <p class="text-sm text-gray-600">Current Alpha Price</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 text-center">
+                            <h3 class="text-lg font-semibold text-amber-600">$40-60</h3>
+                            <p class="text-sm text-gray-600">Estimated Future Price</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-5 border border-gray-200 text-center">
+                            <h3 class="text-lg font-semibold text-blue-600">$11-31</h3>
+                            <p class="text-sm text-gray-600">Potential Savings</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 border border-gray-200 mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Return on Investment Calculation</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-sm">Course Cost</span>
+                                <span class="font-medium">$29</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-sm">Time Saved Per Week (Conservative Estimate)</span>
+                                <span class="font-medium">2 hours</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-sm">Average Professional Hourly Rate</span>
+                                <span class="font-medium">$50/hour</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-sm">Value of Time Saved in First Week</span>
+                                <span class="font-medium">$100</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-sm">Value of Time Saved in First Month</span>
+                                <span class="font-medium">$400</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="text-sm">Value of Time Saved in First Year</span>
+                                <span class="font-medium">$5,200</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm font-semibold">ROI After Just One Year</span>
+                                <span class="font-semibold text-green-600">17,831%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="font-semibold mb-4">Value Considerations:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span class="text-sm">The current $29 alpha pricing already represents a discount from what will likely be a higher regular price</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span class="text-sm">The course includes lifetime access to all current and future videos, representing ongoing value</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span class="text-sm">If the productivity gains from the course save you even 1-2 hours of work, the ROI could be significant</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span class="text-sm">The skills learned are transferable and will continue to provide value throughout your career</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-exclamation-triangle text-amber-500 mt-1"></i>
+                                <span class="text-sm">Consider the value of purchasing now at alpha pricing vs. waiting for a potential discount on a higher future price</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Citations Section -->
+            <section class="py-10">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">References</h2>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-gray-600">
+                            <span class="font-semibold">[1]</span> "10x MacOS - Learn How To Type Fast & Use MacOS 10x Faster ⚡" - 
+                            <a href="https://leonsilicon.io/" class="text-indigo-600 hover:text-indigo-800 underline" target="_blank">
+                                leonsilicon.io
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="mt-6 text-xs text-gray-500">
+                        Note: This report was generated on June 4, 2025. Discount codes and pricing information may change over time. Always verify current offers directly with leonsilicon.io.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+                
+                // Scroll to target
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Copy button functionality
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const code = this.getAttribute('data-code');
+                navigator.clipboard.writeText(code).then(() => {
+                    const originalHTML = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> <span>Copied!</span>';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalHTML;
+                    }, 2000);
+                });
+            });
+        });
+        
+        // Productivity chart
+        const productivityCtx = document.getElementById('productivityChart').getContext('2d');
+        const productivityChart = new Chart(productivityCtx, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                datasets: [{
+                    label: 'Productivity Increase',
+                    data: [10, 30, 45, 70, 85, 100],
+                    backgroundColor: 'rgba(79, 70, 229, 0.2)',
+                    borderColor: 'rgba(79, 70, 229, 1)',
+                    borderWidth: 2,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: 'Productivity Increase (%)'
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Create particle effect
+        function createParticles() {
+            const particles = document.createElement('div');
+            particles.className = 'particles';
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random size between 2px and 6px
+                const size = Math.random() * 4 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation duration between 10s and 30s
+                const duration = Math.random() * 20 + 10;
+                particle.style.animation = `float ${duration}s infinite linear`;
+                
+                particles.appendChild(particle);
+            }
+            
+            // Add particles to hero section
+            const heroSection = document.querySelector('#overview .glass-card');
+            heroSection.appendChild(particles);
+        }
+        
+        // Initialize particles
+        createParticles();
+        
+        // Add floating animation
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                @keyframes float {
+                    0% { transform: translate(0, 0); }
+                    25% { transform: translate(10px, 10px); }
+                    50% { transform: translate(0, 20px); }
+                    75% { transform: translate(-10px, 10px); }
+                    100% { transform: translate(0, 0); }
+                }
+            </style>
+        `);
+    </script>
+</body>
+</html>
